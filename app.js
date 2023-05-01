@@ -65,7 +65,7 @@ function func(prm) {
 btn.onclick=()=>{
     spinner.style.display="block"
     console.log(
-    func(false)
+    func(true)
     .then(req=>{
      render(req)
     })
@@ -86,7 +86,7 @@ function render(params) {
     for (const item of params) {
         root.innerHTML+=`
         <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src=${item.img} alt="Card image cap">
+  <img id='img' class="card-img-top"  src=${item.img} alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">${item.name}</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
