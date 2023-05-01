@@ -1,0 +1,18 @@
+#block{
+    display: flex;
+}
+
+#root{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#spinner{
+    display:none;
+}
+
+.btn{
+    background-color:#57647B;
+    color: aliceblue;
+    border: solid black;
+}
